@@ -1,0 +1,34 @@
+CREATE DATABASE Krausm;
+USE Krausm;
+
+
+CREATE TABLE `Artykuly` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `Nazwa` varchar(15) DEFAULT NULL,
+  `zawartosc` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci
+
+
+CREATE TABLE `articles` (
+  `id_art` int(11) NOT NULL AUTO_INCREMENT,
+  `Autor` int(11) NOT NULL,
+  `zdj` varchar(245) DEFAULT NULL,
+  `artykul` varchar(300) NOT NULL,
+  `tytul` varchar(45) NOT NULL,
+  PRIMARY KEY (`id_art`),
+  KEY `key_idx` (`Autor`)
+) ENGINE=InnoDB AUTO_INCREMENT=95 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `imie` varchar(45) NOT NULL,
+  `nazwisko` varchar(45) NOT NULL,
+  `login` varchar(45) NOT NULL,
+  `haslo` varchar(45) NOT NULL,
+  `typ` varchar(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci
+
+

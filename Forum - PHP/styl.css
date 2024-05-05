@@ -1,0 +1,16 @@
+.icon {
+    width:20px;
+    height:20px;
+}
+
+body {
+    background-color:#6c757d!important;
+}
+.stopka {
+background-color: aliceblue;
+}
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
